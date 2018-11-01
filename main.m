@@ -39,29 +39,3 @@ mlist = [2,0.1];
 %delta_plot(n,mlist,t);
 inverseLT_plot(n,mlist,t,h_star,h);
 %compareiLT_plot(n,mlist,t,h_star,h);
-
-%% metrics
-%cv_plot(mlist)
-%entropy_plot(mlist)
-
-%% Plot opt
-%r=1; load([num2str(r),'m.mat']); prec=1e-20; n=180; x = paramlist{n,1};
-%lx =  m_piform(r,x,t); prcsn=1e-10;
-%mx = integral(@(t) m_piform(r,x,t),0,inf,'AbsTol',prec, 'RelTol',prec);
-%figure; plot(t, 1/mx * lx); hold on; grid on;
-%figure; plot(t,m_sigform(r,paramlist{n,2},t)); hold on; grid on;
-
-%% unimodal
-% load unimodal.mat
-% x=[]; y=[]; n=size(paramlist,1);
-% for k=1:n
-%     if ~isempty(paramlist{k,1})
-%         x=[x,k]; 
-%         y=[y,paramlist{k,2}];
-%     end
-% end
-% figure; loglog(x,y); legend('unimodal scv'); grid on; xlabel('scv'); ylabel('order');
-% % logy = a +b*logx => y = exp(a)*x^b;
-% p = polyfit(log(x),log(y),1);
-% b=p(1); a=p(2); 
-% figure; plot(x,y); hold on; plot(x,exp(a)*x.^b); legend('originial','fit');
