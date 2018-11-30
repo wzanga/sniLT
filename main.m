@@ -1,5 +1,5 @@
-% This code perform compute the inverse Laplace Transform of a function H*
-% in the unified framework proposed by J. Abate and W.Whitt
+% This code computes the inverse Laplace Transform of a function H_star, using
+% the unified framework proposed by J. Abate and W.Whitt
 % Ref :[ J. Abate and W.Whitt "A Unified Framwork for numerically inverting
 %       Laplace transforms", Journal of Computing, 2007]
 %
